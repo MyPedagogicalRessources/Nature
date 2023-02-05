@@ -18,6 +18,7 @@ public class ForestWithMockitoTest {
      */
     @Test
     public void testGetTotalHeight() {
+        // Given a forest with 2 (fake) trees
         List<Nature> natureList = new ArrayList<>();
         Nature tree1 = mock(Tree.class);
         when(tree1.getHeight()).thenReturn(10);
@@ -26,9 +27,9 @@ public class ForestWithMockitoTest {
         natureList.add(tree1);
         natureList.add(tree2);
         Forest forest = new Forest(natureList);
-
+        // When asking for the total height
         int totalHeight = forest.getTotalHeight();
-
+        // Then we get the expected total height
         assertEquals(30, totalHeight);
     }
 }

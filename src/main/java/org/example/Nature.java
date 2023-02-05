@@ -1,7 +1,7 @@
 package org.example;
 
 /**
- * The Nature interface defines methods for growing and getting the height of an object.
+ * The Nature interface defines operations for growing and getting the height of an object.
  */
 public interface Nature {
     /**

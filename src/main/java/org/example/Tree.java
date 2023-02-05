@@ -8,7 +8,7 @@ public class Tree implements Nature {
 
     @Override
     public void grow(int waterAmount) {
-        // well a dummy function to convert water amount in an increasing of height
+        // well, a dummy function to convert water amount in an increasing of height
         height += waterAmount/2;
     }
 
